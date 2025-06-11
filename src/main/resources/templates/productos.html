@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html xmls:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- navbar-expand-sm -->
+            <div class="container-fluid">
+            <a class="navbar-brand  text-white" href="/">
+                <img src="/img/logo.png" width="80" height="80" alt="logo">
+            </a>
+            <button class="navbar-toggler navbar-toggler-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav mx-auto">
+                <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+                        <a class="nav-link text-white" href="/productos">Productos</a>
+                        <a class="nav-link text-white" href="/nosotros">Nosotros</a>
+                        <a class="nav-link text-white" href="/contactanos">Contactanos</a>
+                </div>
+                <div class="d-flex">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                </form>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Productos-->
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Nuestros Productos</h1>
+        <!--nuevo render de productos para no repetir codigo usando el js-->
+        <div class="row" id="productosContainer">
+            <!--Aqui se veran los productos hechos en el productos.js-->
+        </div>
+    </div>
+        
+        <!--posible eliminacion - no sirve, todo esto se paso al js para renderizar
+        <div class="col-md-4 mb-4 text-center">
+            <a href="pdam.html" class="text-decoration-none text-dark">
+            <div class="card">
+            <img
+                src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/5432c056e4b245ea9b291c01f51e8299_9366/Pantalon_Deportivo_Beckenbauer_Negro_IW3171_21_model.jpg"
+                class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+                <h5 class="card-title">Pantalón Deportivo Addidas (Mujer)</h5>
+                <p class="card-text">Pantalones deportivos diseñados con materiales reciclados y renovables. Cómodos,
+                modernos y perfectos para cualquier rutina deportiva.</p>
+                <p><strong>Precio:</strong> S/ 179.00</p>
+            </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-md-4 mb-4 text-center">
+            <a href="pdah.html" class="text-decoration-none text-dark">
+            <div class="card">
+            <img
+                src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/c87749bc2db8494c94a4c14aa3718d38_9366/Pantalon_Deportivo_Adicolor_Baggy_Fit_Firebird_Negro_IZ4801_21_model.jpg"
+                class="card-img-top" alt="Producto 2">
+            <div class="card-body">
+                <h5 class="card-title">Pantalón Deportivo Addidas (Hombre)</h5>
+                <p class="card-text">Diseño ajustado, cómodo y moderno. Hecho parcialmente con materiales reciclados. Ideal
+                para entrenamientos y uso casual.</p>
+                <p><strong>Precio:</strong> S/ 127.00</p>
+            </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-md-4 mb-4 text-center">
+            <a href="cda.html" class="text-decoration-none text-dark">
+            <div class="card">
+            <img
+                src="https://www.nike.com.pe/dw/image/v2/BJKZ_PRD/on/demandware.static/-/Sites-catalog-equinox/default/dwe555c3da/images/hi-res/196607376034_1_20240213120000-mrtPeru.jpeg?sw=800&sh=800"
+                class="card-img-top" alt="Producto 3">
+            <div class="card-body">
+                <h5 class="card-title">Conjunto deportivo Nike (Hombre)</h5>
+                <p class="card-text">Diseño 2 en 1 con tela suave, forro de malla y estilo clásico. Ideal para quienes
+                buscan frescura y comodidad al entrenar.</p>
+                <p><strong>Precio:</strong> S/ 250.00</p>
+            </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-md-4 mb-4 text-center">
+            <a href="pdam.html" class="text-decoration-none text-dark">
+            <div class="card">
+            <img
+                src="https://www.nike.com.pe/dw/image/v2/BJKZ_PRD/on/demandware.static/-/Sites-catalog-equinox/default/dwccea3fc9/images/hi-res/197600314412_1_20241002-mrtPeru.jpg?sw=800&sh=800"
+                class="card-img-top" alt="Producto 4">
+            <div class="card-body">
+                <h5 class="card-title">Polo de correr manga larga Nike (Mujer) </h5>
+                <p class="card-text">Prenda ligera, elástica y de secado rápido. Ideal para correr de día o noche, brindando
+                comodidad durante todo el entrenamiento.</p>
+                <p><strong>Precio:</strong> S/ 180.00</p>
+            </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-md-4 mb-4 text-center">
+            <a href="pdah.html" class="text-decoration-none text-dark">
+            <div class="card">
+            <img
+                src="https://www.nike.com.pe/dw/image/v2/BJKZ_PRD/on/demandware.static/-/Sites-catalog-equinox/default/dw105f499a/images/hi-res/196608713111_1_20241002-mrtPeru.jpg?sw=800&sh=800"
+                class="card-img-top" alt="Producto 5">
+            <div class="card-body">
+                <h5 class="card-title">Polo manga larga Nike (Hombre)</h5>
+                <p class="card-text">Diseño transpirable con protección UV. Perfecto para entrenar bajo el sol con frescura,
+                estilo y libertad de movimiento.</p>
+                <p><strong>Precio:</strong> S/ 130.00</p>
+            </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-md-4 mb-4 text-center">
+            <a href="pdah.html" class="text-decoration-none text-dark">
+            <div class="card">
+            <img
+                src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/ad883a3e5dad457da454104091639ace_9366/Top_Deportivo_Soporte_Medio_Powerimpact_Heritage_Verde_JG6179_HM1.jpg"
+                class="card-img-top" alt="Producto 6">
+            <div class="card-body">
+                <h5 class="card-title">Top Deportivo Addidas (Mujer)</h5>
+                <p class="card-text">Top de soporte medio sin cierres, con tejido CLIMACOOL que repele el sudor. Ideal para
+                entrenamientos de alta intensidad.</p>
+                <p><strong>Precio:</strong> S/ 90.00</p>
+            </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-md-4 mb-4 text-center">
+            <a href="pdah.html" class="text-decoration-none text-dark">
+            <div class="card">
+            <img
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,e_sharpen:95,w_2000,h_2000/global/524955/51/mod01/fnd/PER/fmt/png/Shorts-de-running-RUN-ULTRAFORM-para-mujer"
+                class="card-img-top" alt="Producto 7">
+            <div class="card-body">
+                <h5 class="card-title">Shorts Deportivo Puma (Mujer)</h5>
+                <p class="card-text">Shorts ligeros, cómodos y funcionales. Fabricados con tejido Ultraform e incluyen un
+                bolsillo interior para objetos pequeños.</p>
+                <p><strong>Precio:</strong> S/ 55.00</p>
+            </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-md-4 mb-4 text-center">
+            <a href="pdah.html" class="text-decoration-none text-dark">
+            <div class="card">
+            <img src="https://oechsle.vteximg.com.br/arquivos/ids/20723244-1000-1000/2842727_4.jpg?v=638775335507730000"
+                class="card-img-top" alt="Producto 8">
+            <div class="card-body">
+                <h5 class="card-title">Shorts Deportivo Puma (Hombre)</h5>
+                <p class="card-text">Shorts frescos, cómodos y ligeros. Ofrecen libertad de movimiento durante cualquier
+                entrenamiento físico o rutina diaria.</p>
+                <p><strong>Precio:</strong> S/ 80.00</p>
+            </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-md-4 mb-4 text-center">
+            <a href="pdah.html" class="text-decoration-none text-dark">
+            <div class="card">
+            <img
+                src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/7d0a62da5d9c4869b34bbcec01089f10_9366/Licras_Optime_Heritage_Full-Length_Verde_JG6152_HM1.jpg"
+                class="card-img-top" alt="Producto 9">
+            <div class="card-body">
+                <h5 class="card-title">Licra Deportiva Addidas (Mujer)</h5>
+                <p class="card-text">Licras de estilo retro con tecnología CLIMACOOL. Cómodas y elásticas, ideales para
+                entrenamientos de fuerza y alta exigencia.</p>
+                <p><strong>Precio:</strong> S/ 120.00</p>
+            </div>
+            </div>
+            </a>
+        </div>
+        </div>
+    </div>
+    -->
+
+    <footer class="bg-dark text-light pt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <h6 class="text-uppercase fw-bold">NOVA ATHLETIC</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Regístrate para recibir correos</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Hazte miembro</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h6 class="text-uppercase fw-bold">Obtener ayuda</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Envío y entrega</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Cambios, devoluciones y garantías</a>
+                        </li>
+                        <li><a href="#" class="text-light text-decoration-none">Preguntas frecuentes</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contáctanos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h6 class="text-uppercase fw-bold">Soporte</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">0800-10-2-11</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Lun - Vie | 9 a.m. a 6 p.m.</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">soporte@novathletic.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+                    <div class="mb-3 text-center">
+                        <a href="https://youtube.com" class="text-white me-3">
+                            <i class="bi bi-youtube"></i></a>
+                        <a href="https://facebook.com" class="text-white me-3">
+                            <i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com" class="text-white me-3">
+                            <i class="bi bi-twitter"></i></a>
+                        <a href="https://instagram.com" class="text-white">
+                            <i class="bi bi-instagram"></i></a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/Libro_PE_tcm202_841885_72e3b7aa43.png"
+                                alt="Libro de Reclamaciones" class="img-fluid rounded"
+                                style="width: 120px; border: none; background-color: transparent;">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row mt-4 pt-4 border-top border-secondary">
+                    <div class="col-md-6 text-start small">
+                        <span>Perú &nbsp; | &nbsp; 2025 Nova Athletic SAC. Todos los derechos reservados.</span>
+                    </div>
+                    <div class="col-md-6 text-md-end text-start small mt-2 mt-md-0">
+                        <a href="#" class="text-light text-decoration-none me-3">Términos y Condiciones</a>
+                        <a href="#" class="text-light text-decoration-none me-3">Factura Electrónica</a>
+                        <a href="#" class="text-light text-decoration-none">Política de privacidad</a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <!--Modal-->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProductName">Nombre del Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body d-flex flex-column flex-md-row">
+                    <div class="me-md-4 mb-3 mb-md-0">
+                        <img id="modalProductImage" src="" alt="Imagen del producto" class="img-fluid rounded">
+                    </div>
+                    <div>
+                        <p id="modalProductDescription">Descripción detallada del producto.</p>
+                        <h4 id="modalProductPrice" class="text-success">S/ 0.00</h4>
+                        <button id="addToCartBtn" class="btn btn-primary mt-3">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Scripts-->
+    <script src="/js/productos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+</body>
+</html>

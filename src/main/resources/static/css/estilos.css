@@ -1,0 +1,78 @@
+.brand-card {
+    transition: transform 0.3s ease; /*animacion suave*/
+}
+.brand-card:hover {
+    transform: scale(1.1); /*(x,y)*/
+}
+.brand-img-wrapper {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*todas las img se comportaran de forma uniforme*/
+.brand-img {
+    max-height: 80px;
+    max-width: 100%;
+    object-fit: contain;
+}
+/*Para las secciones*/
+.productos-section {
+    padding: 4rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.productos-hover {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+/*para la imagen*/
+.productos-hover img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+.productos-hover:hover img {
+    transform: scale(1.05);
+}
+/*Para cuando el cursor pase por la imagen*/
+.productos-hover .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3 ease;
+    border-radius: 1rem;
+}
+.productos-hover:hover .overlay {
+    opacity: 1;
+}
+/*para el boton*/
+.productos-hover .btn{
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3 ease, color 0.3s ease;
+}
+.productos-hover .btn:hover{
+    background-color: #333;
+    color: #fff
+}
+.mini-img-container{
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.mini-img-container img{
+    transition: transform 0.4s ease;
+}
+.mini-img-container:hover img{
+    transform: scale(1.08);
+}
